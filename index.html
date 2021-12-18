@@ -11,6 +11,28 @@
 
 <body>
 
+    <!--svg__sprite-->
+    <svg display="none">
+        <symbol id="facebook" viewBox="0 0 470.513 470.513">
+            <g>
+                <path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853
+                c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691
+                c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z"/> 
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 64 64" >
+            <g >
+                <path  d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z" />
+            </g>
+        </symbol>
+        <symbol id="linkedin" viewBox="0 0 72 72" >
+            <g><polygon  fill="#000000" points="0 72 72 72 72 0 0 0"></polygon>
+                <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFFFFF"></path>
+            </g>
+        </symbol>
+    </svg>
+
+
 
     <!--header-->
     <header class="header">
@@ -38,7 +60,9 @@
                 <h2 class="intro__subtitle">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 </h2>
-                <a class="btn btn--red" href="#">find out more</a>
+                <a class="btn btn--red" href="#">
+                    <p class="btn__text">find out more</p>
+                </a>
             </div>
         </div>
     </div>
@@ -156,13 +180,15 @@
                             <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
                             </p>
                         </div>
-                        <div class="social">
-                            <a class='social__item' href="#">
-                                <img class="social__img" src="img/Social/Face.svg" alt="Facebook">
-                            </a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Twitt.svg" alt="Twitter"></a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Linked.svg" alt=""></a>
-                        </div>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a>
+                        <a href="#"><svg class="icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg></a>
                     </div>
                     <div class="team__item">
                         <img class="team__img" src="img/Team/Item_2.jpg" alt="#">
@@ -173,13 +199,15 @@
                             <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
                             </p>
                         </div>
-                        <div class="social">
-                            <a class='social__item' href="#">
-                                <img class="social__img" src="img/Social/Face.svg" alt="Facebook">
-                            </a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Twitt.svg" alt="Twitter"></a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Linked.svg" alt=""></a>
-                        </div>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a>
+                        <a href="#"><svg class="icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg></a>
                     </div>
                     <div class="team__item">
                         <img class="team__img" src="img/Team/Item_3.jpg" alt="#">
@@ -190,13 +218,15 @@
                             <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
                             </p>
                         </div>
-                        <div class="social">
-                            <a class='social__item' href="#">
-                                <img class="social__img" src="img/Social/Face.svg" alt="Facebook">
-                            </a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Twitt.svg" alt="Twitter"></a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Linked.svg" alt=""></a>
-                        </div>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a>
+                        <a href="#"><svg class="icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg></a>
                     </div>
                     <div class="team__item">
                         <img class="team__img" src="img/Team/Item_4.jpg" alt="#">
@@ -207,16 +237,27 @@
                             <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
                             </p>
                         </div>
-                        <div class="social">
-                            <a class='social__item' href="#">
-                                <img class="social__img" src="img/Social/Face.svg" alt="Facebook">
-                            </a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Twitt.svg" alt="Twitter"></a>
-                            <a class='social__item' href="#"><img class="social__img" src="img/Social/Linked.svg" alt=""></a>
-                        </div>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a>
+                        <a href="#"><svg class="icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a>
+                        <a href="#"><svg class="icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg></a>
                     </div>
                 </div>
                 <!-- /team__content -->
+            </div>
+        </div>
+        <!-- reviews -->
+        <div class="reviews">
+            <div class="container">
+                <div class="reviews__item">
+                    <div class="reviews__img"></div>
+                    <div class="reviews__text"></div>
+                </div>
             </div>
         </div>
 

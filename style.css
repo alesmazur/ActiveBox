@@ -133,25 +133,30 @@ p {
 
 .btn {
     display: inline-block;
-    vertical-align: top;
+    width: fit-content;
+    height: fit-content;
     font-family: raleway;
-    font-size: 13;
-    font-weight: 600;
     color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     padding: 18px 45px;
-    border-radius: 2px;
-    border: 0;
-    transition: color .2s linear;
-}
-
-.btn--red {
     background-color: #e84545;
+    border-radius: 3px;
+    justify-content: center;
+    transition: .3s ease-in-out;
 }
 
-.btn--red:hover {
-    background-color: rgba(232, 69, 69, .9);
+.btn:hover {
+    color: #e84545;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #fff;
+    transition: .3s ease-in-out;
+    transform: scale(1.01);
+    border-radius: 4px;
 }
 
 
@@ -211,10 +216,12 @@ p {
     background-size: cover;
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
+    transition: opacity .4s ease-in-out;
 }
 
 .works__item:hover .works__content {
     opacity: 1;
+    transition: opacity .3s ease-in-out;
 }
 
 .works__img {
@@ -237,7 +244,7 @@ p {
     top: 0;
     left: 0;
     z-index: 2;
-    transition: opacity .2s linear;
+    transition: opacity .3s ease-in-out;
 }
 
 .works__title {
@@ -309,26 +316,39 @@ p {
 /*social
 ============================= */
 
-.social {
-    display: flex;
-}
-
-.social__item {
-    display: flex;
+.icon {
+    display: inline-block;
+    opacity: .4;
     width: 40px;
     height: 40px;
-    border: 2px solid #e8ecee;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5px;
+    border: 2px solid black;
     padding: 8px;
+    border-radius: 2px;
+    margin: 1px;
+    transition: .4s ease-in-out;
 }
 
-.social__img {
-    opacity: .4;
+.icon:hover {
+    opacity: 1;
+    transition: .25s ease-in-out;
+    border-radius: none;
+    transform: scale(1.1);
+    border-radius: 50%;
 }
 
-.social__img:hover {
-    opacity: .9;
-    transition: .2s linear;
+
+/*reviews
+============================= */
+
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__img {
+    width: 50%;
+}
+
+.reviews__text {
+    width: 50%;
 }
