@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: 'Cardo', serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -133,11 +133,12 @@ p {
 
 .btn {
     display: inline-block;
-    width: fit-content;
-    height: fit-content;
-    font-family: raleway;
+    width: 200px;
+    height: 50px;
+    font-family: 'raleway', sans-serif;
     color: #fff;
     text-align: center;
+    justify-content: center;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -151,12 +152,14 @@ p {
 
 .btn:hover {
     color: #e84545;
-    font-weight: bolder;
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 14px;
     background-color: #fff;
-    transition: .3s ease-in-out;
-    transform: scale(1.01);
+    transition: .4s;
     border-radius: 4px;
+    font-family: 'raleway', sans-serif;
+    padding: 17px 44px;
+    text-align: center;
 }
 
 
@@ -265,7 +268,7 @@ p {
 ============================= */
 
 .team {
-    margin: 100px 0 70px;
+    margin: 50px 0;
 }
 
 .team__content {
@@ -277,7 +280,7 @@ p {
 
 .team__item {
     width: 22%;
-    margin: 50 15px;
+    margin: 50px 15px 100px 15px;
 }
 
 .team__img {
@@ -289,7 +292,7 @@ p {
 
 .team__name {
     margin-bottom: 15px;
-    font-family: 'Raleway';
+    font-family: 'raleway', sans-serif;
     font-size: 22px;
     font-weight: regular;
     color: #2d3033;
@@ -321,17 +324,18 @@ p {
     opacity: .4;
     width: 40px;
     height: 40px;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 8px;
-    border-radius: 2px;
+    border-radius: 1px;
     margin: 1px;
-    transition: .4s ease-in-out;
+    transition: .4s ease;
 }
 
 .icon:hover {
     opacity: 1;
-    transition: .25s ease-in-out;
-    border-radius: none;
+    transition: .3s ease;
+    border: 1px solid #000;
+    border-radius: 50%;
     transform: scale(1.1);
     border-radius: 50%;
 }
@@ -340,15 +344,123 @@ p {
 /*reviews
 ============================= */
 
+.reviews {
+    background-color: #53354a;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 100px;
+    height: 500px;
+}
+
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
 }
 
-.reviews__img {
+.reviews__photo {
     width: 50%;
+    position: relative;
+    height: 500px;
+}
+
+.reviews__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.review {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #53354a;
+    justify-content: center
 }
 
 .reviews__text {
-    width: 50%;
+    font-family: 'cardo', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    font-weight: regular;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.reviews__author {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 85px;
+}
+
+
+/*download
+============================= */
+
+.download {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 90px 0;
+    align-items: center;
+    width: 100%;
+}
+
+.download__title {
+    font-family: 'raleway', sans-serif;
+    font-size: 28px;
+    font-weight: regular;
+    color: #2d3033;
+    margin-bottom: 20px;
+}
+
+.download__subtitle {
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 13px;
+    color: #2d3033;
+    margin-bottom: 40px;
+}
+
+.btn__download {
+    min-width: 280px;
+    transition: .3s;
+}
+
+.btn__download:hover {
+    border: 2px solid #e84545;
+    color: #e84545;
+    transition: .3s;
+}
+
+
+/*footer
+============================= */
+
+.footer {
+    width: 100%;
+    background-color: #3a3e64;
+    padding: 70px 0;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    width: 33.333%;
 }
