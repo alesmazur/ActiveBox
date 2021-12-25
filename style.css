@@ -546,11 +546,8 @@ p {
 /*media quieries
 ============================= */
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
     .intro__title {
         font-size: 40px;
     }
 }
-
-
-/* new test review */
