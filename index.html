@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <title>ActiveBox</title>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     </svg>
     <!-- /SVG__sprite -->
     <!--Header-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
 
             <div class="header__content">
@@ -47,11 +48,11 @@
                     <a href="#"><img src="img/logo.png" alt="logo"></a>
                 </div>
                 <nav class="menu">
-                    <a class="menu__item" href="#">Features</a>
-                    <a class="menu__item" href="#">Works</a>
-                    <a class="menu__item" href="#">Our Team</a>
-                    <a class="menu__item" href="#">Testimonials</a>
-                    <a class="menu__item" href="#">Download</a>
+                    <a class="menu__item" href="#" data-scroll="#features">Features</a>
+                    <a class="menu__item" href="#" data-scroll="#works">Works</a>
+                    <a class="menu__item" href="#" data-scroll="#team">Our Team</a>
+                    <a class="menu__item" href="#" data-scroll="#reviews">Testimonials</a>
+                    <a class="menu__item" href="#" data-scroll="#download">Download</a>
                 </nav>
                 <button class="burger" type="button">
                     <span class='burger__item'>midline</span>
@@ -61,7 +62,7 @@
     </header>
     <!-- /Header -->
     <!--Intro-->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__content">
                 <h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
@@ -74,7 +75,7 @@
     </div>
     <!-- /Intro -->
     <!--Features-->
-    <div class="container">
+    <div class="container" id="features">
         <div class="features">
             <div class="features__item">
                 <img class="features__icon" src="img/Features/Benefit_1.png" alt="#">
@@ -116,7 +117,7 @@
     </div>
     <!-- ./Features -->
     <!-- Works -->
-    <div class="works">
+    <div class="works" id="works">
         <div class="works__item">
             <img class="works__img" src="img/Works/Work_1.jpg" alt="#">
             <div class="works__content">
@@ -175,7 +176,7 @@
         </div>
         <!-- /Works -->
         <!-- Team -->
-        <div class="container">
+        <div class="container" id="team">
             <div class="team">
                 <div class="team__content">
                     <div class="team__item">
@@ -259,8 +260,9 @@
             </div>
         </div>
         <!-- /Team -->
+
         <!-- Reviews -->
-        <div class="reviews">
+        <div class="reviews" id="reviews">
             <div class="container">
                 <div class="reviews__item">
                     <div class="reviews__photo"><img class="reviews__img" src="img/Reviews/Customer_1.jpg" alt="customer_1"></div>
@@ -273,7 +275,7 @@
         </div>
         <!-- /Reviews -->
         <!-- Download -->
-        <div class="download">
+        <div class="download" id="download">
             <div class="container">
                 <h3 class="download__title">
                     Are You Ready to Start? Download Now For Free!
@@ -327,11 +329,15 @@
         <!-- Copyright -->
         <div class="copyright">
 
-            <div>Copyright © 2015 ActiveBox. All Rights Reserved </div>
-            <div>Made by <a class="author__link" href="https://kamalchaneman.com/">kamal chaneman</a>
+            <div class="copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved </div>
+            <div class="copyright__link">Made by <a class="author__link" href="https://kamalchaneman.com/">kamal chaneman</a>
             </div>
         </div>
         <!-- /Copyright -->
+        <!-- jQuery -->
+        <script src="app.js"></script>
+
+
 </body>
 
 </html>
