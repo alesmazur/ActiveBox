@@ -1,758 +1,778 @@
-                                    body {
-                                        margin: 0;
-                                        font-family: 'Cardo', serif;
-                                        font-family: 'Open Sans', sans-serif;
-                                        font-family: 'Raleway', sans-serif;
-                                        font-size: 14px;
-                                        color: #6c7279;
-                                        background-color: #fff;
-                                    }
-                                    
-                                    *,
-                                    *:before,
-                                    *:after {
-                                        box-sizing: border-box;
-                                    }
-                                    
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6 {
-                                        margin: 0;
-                                    }
-                                    
-                                    p {
-                                        margin: 0 0 10px;
-                                    }
-                                    /*Container
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  font-family: "Cardo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #6c7279;
+  background-color: #fff;
+  cursor: default;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+/*Container
 ============================= */
-                                    
-                                    .container {
-                                        width: 100%;
-                                        max-width: 1170px;
-                                        margin: 0 auto;
-                                        padding: 0 15px;
-                                    }
-                                    /*Header
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  cursor: default;
+}
+/*Header
 ============================= */
-                                    
-                                    .header {
-                                        height: 100px;
-                                        width: 100%;
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        z-index: 1000px;
-                                    }
-                                    
-                                    .fixed {
-                                        position: fixed;
-                                        background-color: #31344e;
-                                        overflow: hidden;
-                                        height: auto;
-                                        z-index: 3;
-                                        transition: 0.3s ease-in-out;
-                                    }
-                                    
-                                    .fixed .header__content {
-                                        padding: 15px 0;
-                                        border-bottom: 0;
-                                    }
-                                    
-                                    .header__content {
-                                        align-items: center;
-                                        display: flex;
-                                        justify-content: space-between;
-                                        border-bottom: 1px solid #50536a;
-                                        padding: 40px;
-                                    }
-                                    /*Nav
+
+.header {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000px;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #31344e;
+  overflow: hidden;
+  height: auto;
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+}
+
+.fixed .header__content {
+  padding: 15px 0;
+  border-bottom: 0;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #50536a;
+  padding: 40px;
+}
+/*Nav
 ============================= */
-                                    
-                                    .menu {
-                                        display: flex;
-                                        font-size: 13px;
-                                        font-weight: 700;
-                                        text-transform: uppercase;
-                                    }
-                                    
-                                    .menu__item {
-                                        margin-left: 50px;
-                                        color: #fff;
-                                        text-decoration: none;
-                                        opacity: .75;
-                                        transition: opacity .1s;
-                                    }
-                                    
-                                    .menu__item:first-child {
-                                        margin-left: 0;
-                                    }
-                                    
-                                    .menu__item:hover {
-                                        opacity: 1;
-                                    }
-                                    /*Intro
+
+.menu {
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.1s;
+}
+
+.menu__item:first-child {
+  margin-left: 0;
+}
+
+.menu__item:hover {
+  opacity: 1;
+}
+/*Intro
 ============================= */
-                                    
-                                    .intro {
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        padding-top: 100px;
-                                        height: 750px;
-                                        background: #31344e url(img/intro_cover.jpg) center no-repeat;
-                                        background-size: cover;
-                                    }
-                                    
-                                    .intro__content {
-                                        width: 100%;
-                                        max-width: 970px;
-                                        margin: 0 auto;
-                                        text-align: center;
-                                    }
-                                    
-                                    .intro__title {
-                                        margin: 0 0 30px;
-                                        font-family: 'Open Sans', sans-serif;
-                                        font-size: 65px;
-                                        line-height: 1.1;
-                                        color: #fff;
-                                        font-weight: bold;
-                                        text-transform: uppercase;
-                                    }
-                                    
-                                    .intro__subtitle {
-                                        font-family: Raleway;
-                                        margin-bottom: 35px;
-                                        font-size: 22px;
-                                        line-height: 1.5;
-                                        color: #fff;
-                                        font-weight: 400;
-                                        opacity: .7;
-                                    }
-                                    /*Button
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  height: 750px;
+  background: #31344e url(img/intro_cover.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.intro__content {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__title {
+  margin: 0 0 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 65px;
+  line-height: 1.1;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.intro__subtitle {
+  font-family: Raleway;
+  margin-bottom: 35px;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+}
+/*Button
 ============================= */
-                                    
-                                    .btn {
-                                        display: inline-block;
-                                        width: 200px;
-                                        height: 50px;
-                                        font-family: 'raleway', sans-serif;
-                                        color: #fff;
-                                        text-align: center;
-                                        justify-content: center;
-                                        font-size: 13px;
-                                        font-weight: 600;
-                                        text-transform: uppercase;
-                                        text-decoration: none;
-                                        padding: 18px 45px;
-                                        background-color: #e84545;
-                                        border-radius: 3px;
-                                        justify-content: center;
-                                        transition: .3s ease-in-out;
-                                    }
-                                    
-                                    .btn:hover {
-                                        color: #e84545;
-                                        font-weight: bold;
-                                        font-size: 14px;
-                                        background-color: #fff;
-                                        transition: .4s;
-                                        border-radius: 4px;
-                                        font-family: 'raleway', sans-serif;
-                                        padding: 17px 44px;
-                                        text-align: center;
-                                    }
-                                    /*Features
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  font-family: "raleway", sans-serif;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 45px;
+  background-color: #e84545;
+  border-radius: 3px;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #e84545;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-family: "raleway", sans-serif;
+  padding: 17px 44px;
+  text-align: center;
+}
+/*Features
 ============================= */
-                                    
-                                    .features {
-                                        display: flex;
-                                        justify-content: center;
-                                        flex-wrap: wrap;
-                                        margin: 100px 0;
-                                    }
-                                    
-                                    .features__item {
-                                        width: 33, 33333%;
-                                        max-width: 300px;
-                                        margin: 20 0;
-                                        padding: 0 40px;
-                                        text-align: center;
-                                    }
-                                    
-                                    .features__icon {
-                                        margin-bottom: 20px;
-                                    }
-                                    
-                                    .features__title {
-                                        text-transform: uppercase;
-                                        font-family: 'Raleway', sans-serif;
-                                        font-size: 14px;
-                                        color: #2d3033;
-                                        font-weight: regular;
-                                        margin-bottom: 15px;
-                                    }
-                                    
-                                    .features__text {
-                                        font-size: 14px;
-                                        line-height: 1.5;
-                                        color: #6c7279;
-                                    }
-                                    /*Works
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.features__item {
+  width: 33, 33333%;
+  max-width: 300px;
+  margin: 20 0;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.features__icon {
+  margin-bottom: 20px;
+}
+
+.features__title {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2d3033;
+  font-weight: regular;
+  margin-bottom: 15px;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
+}
+/*Works
 ============================= */
-                                    
-                                    .works {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        margin: 80px 0 0 0;
-                                        padding: 0;
-                                    }
-                                    
-                                    .works__item {
-                                        width: 25%;
-                                        position: relative;
-                                        overflow: hidden;
-                                        height: 350px;
-                                        background-size: cover;
-                                        border-bottom: 1px solid #fff;
-                                        border-right: 1px solid #fff;
-                                        transition: opacity .4s ease-in-out;
-                                    }
-                                    
-                                    .works__item:hover .works__content {
-                                        opacity: 1;
-                                        transition: opacity .3s ease-in-out;
-                                    }
-                                    
-                                    .works__img {
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        z-index: 1;
-                                        min-width: 100%;
-                                    }
-                                    
-                                    .works__content {
-                                        opacity: 0;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        text-align: center;
-                                        width: 100%;
-                                        height: 100%;
-                                        background-color: rgba(232, 69, 69, .9);
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        z-index: 2;
-                                        transition: opacity .3s ease-in-out;
-                                    }
-                                    
-                                    .works__title {
-                                        font-size: 14px;
-                                        font-weight: 700;
-                                        color: #fff;
-                                        text-transform: uppercase;
-                                        margin-bottom: 5px;
-                                    }
-                                    
-                                    .works__text {
-                                        font-size: 14px;
-                                        color: fff;
-                                    }
-                                    /*Team
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 0 0 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.works__item {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  background-size: cover;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.works__item:hover .works__content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.works__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  min-width: 100%;
+}
+
+.works__content {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(232, 69, 69, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.works__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.works__text {
+  font-size: 14px;
+  color: fff;
+}
+/*Team
 ============================= */
-                                    
-                                    .team {
-                                        margin: 50px 0;
-                                    }
-                                    
-                                    .team__content {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        margin: 0 -15px;
-                                        justify-content: space-between;
-                                    }
-                                    
-                                    .team__item {
-                                        width: 22%;
-                                        margin: 50px 15px 100px 15px;
-                                    }
-                                    
-                                    .team__img {
-                                        display: block;
-                                        max-width: 100%;
-                                        height: auto;
-                                        margin-bottom: 30px;
-                                    }
-                                    
-                                    .team__name {
-                                        margin-bottom: 15px;
-                                        font-family: 'raleway', sans-serif;
-                                        font-size: 22px;
-                                        font-weight: 400px;
-                                        color: #2d3033;
-                                    }
-                                    
-                                    .team__prof {
-                                        color: #e84545;
-                                        margin-bottom: 15px;
-                                        text-transform: uppercase;
-                                        font-family: 'Raleway';
-                                        font-size: 15px;
-                                    }
-                                    
-                                    .team__text {
-                                        font-size: 14px;
-                                        line-height: 1.5;
-                                        color: #6c7279;
-                                        font-family: 'Raleway;';
-                                        margin: 0px;
-                                        margin-bottom: 20px;
-                                    }
-                                    /*Social
+
+.team {
+  margin: 50px 0;
+  cursor: default;
+}
+
+.team__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  justify-content: space-between;
+}
+
+.team__item {
+  width: 22%;
+  margin: 50px 15px 100px 15px;
+}
+
+.team__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.team__name {
+  margin-bottom: 15px;
+  font-family: "raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 400px;
+  color: #2d3033;
+}
+
+.team__prof {
+  color: #e84545;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-size: 15px;
+}
+
+.team__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
+  font-family: "Raleway;";
+  margin: 0px;
+  margin-bottom: 20px;
+}
+/*Social
 ============================= */
-                                    
-                                    .icon {
-                                        display: inline-block;
-                                        opacity: .4;
-                                        width: 40px;
-                                        height: 40px;
-                                        border: 1px solid black;
-                                        padding: 8px;
-                                        border-radius: 1px;
-                                        margin: 1px;
-                                        transition: .4s ease;
-                                    }
-                                    
-                                    .icon__footer {
-                                        color: white;
-                                        border: 2px solid white;
-                                    }
-                                    
-                                    .icon__footer:hover {
-                                        color: white;
-                                        border: 2px solid white;
-                                        border-radius: 50%;
-                                    }
-                                    
-                                    .icon:hover {
-                                        opacity: 1;
-                                        transition: .3s ease;
-                                        border: 1px solid #000;
-                                        border-radius: 50%;
-                                        transform: scale(1.1);
-                                        border-radius: 50%;
-                                    }
-                                    
-                                    .footer__social .icon {
-                                        background: none;
-                                        color: white;
-                                        border-width: 2px;
-                                    }
-                                    /*Mobile reviews
+
+.icon {
+  display: inline-block;
+  opacity: 0.4;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 1px;
+  margin: 1px;
+  transition: 0.4s ease;
+}
+
+.icon__footer {
+  color: white;
+  border: 2px solid white;
+}
+
+.icon__footer:hover {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  opacity: 1;
+  transition: 0.3s ease;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+.footer__social .icon {
+  background: none;
+  color: white;
+  border-width: 2px;
+}
+
+/*Reviews
 ============================= */
-                                    
-                                    .mobile__review {
-                                        display: none;
-                                    }
-                                    /*Reviews
+
+.reviews {
+  background-color: #53354a;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.reviews__img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.reviews__content {
+  width: 50%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #53354a;
+}
+.reviews__text {
+  font-family: "cardo", sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: regular;
+  text-align: left;
+}
+
+.reviews__author {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  font-family: "raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+/*Download
 ============================= */
-                                    
-                                    .reviews {
-                                        background-color: #53354a;
-                                        overflow: hidden;
-                                        width: 100%;
-                                        margin-bottom: 100px;
-                                        height: 500px;
-                                    }
-                                    
-                                    .reviews__item {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                    }
-                                    
-                                    .reviews__photo {
-                                        width: 50%;
-                                        position: relative;
-                                        height: 500px;
-                                    }
-                                    
-                                    .reviews__img {
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                        z-index: 1;
-                                    }
-                                    
-                                    .review {
-                                        width: 50%;
-                                        display: flex;
-                                        flex-direction: column;
-                                        background-color: #53354a;
-                                        justify-content: center;
-                                    }
-                                    
-                                    .reviews__text {
-                                        font-family: 'cardo', sans-serif;
-                                        font-size: 36px;
-                                        font-style: italic;
-                                        color: #fff;
-                                        font-weight: regular;
-                                        line-height: 1.2;
-                                        text-align: left;
-                                        margin-left: 80px;
-                                    }
-                                    
-                                    .reviews__author {
-                                        color: #fff;
-                                        text-decoration: none;
-                                        text-align: center;
-                                        justify-content: center;
-                                        font-family: 'raleway', sans-serif;
-                                        font-weight: bold;
-                                        text-transform: uppercase;
-                                        font-size: 13px;
-                                        margin-top: 40px;
-                                        text-align: left;
-                                        margin-left: 85px;
-                                    }
-                                    /*Download
+
+.download {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 90px 0;
+  align-items: center;
+  width: 100%;
+}
+
+.download__title {
+  font-family: "raleway", sans-serif;
+  font-size: 28px;
+  font-weight: regular;
+  color: #2d3033;
+  margin-bottom: 20px;
+}
+
+.download__subtitle {
+  font-family: "raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 13px;
+  color: #2d3033;
+  margin-bottom: 40px;
+}
+
+.btn__download {
+  min-width: 280px;
+  transition: 0.3s;
+}
+
+.btn__download:hover {
+  border: 2px solid #e84545;
+  color: #e84545;
+  transition: 0.3s;
+}
+/*Footer
 ============================= */
-                                    
-                                    .download {
-                                        height: 150px;
-                                        display: flex;
-                                        flex-direction: column;
-                                        text-align: center;
-                                        margin: 90px 0;
-                                        align-items: center;
-                                        width: 100%;
-                                    }
-                                    
-                                    .download__title {
-                                        font-family: 'raleway', sans-serif;
-                                        font-size: 28px;
-                                        font-weight: regular;
-                                        color: #2d3033;
-                                        margin-bottom: 20px;
-                                    }
-                                    
-                                    .download__subtitle {
-                                        font-family: 'raleway', sans-serif;
-                                        font-weight: bold;
-                                        text-transform: uppercase;
-                                        font-style: normal;
-                                        font-size: 13px;
-                                        color: #2d3033;
-                                        margin-bottom: 40px;
-                                    }
-                                    
-                                    .btn__download {
-                                        min-width: 280px;
-                                        transition: .3s;
-                                    }
-                                    
-                                    .btn__download:hover {
-                                        border: 2px solid #e84545;
-                                        color: #e84545;
-                                        transition: .3s;
-                                    }
-                                    /*Footer
+
+.footer {
+  width: 100%;
+  background-color: #3a3e64;
+  padding: 70px 0;
+  cursor: default;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  width: 33.333%;
+  text-align: center;
+}
+
+.footer__title {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "raleway", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer__text {
+  color: rgba(225, 255, 255, 0.5);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer__social {
+  color: white;
+}
+
+.icon__footer {
+  color: white;
+  border: 2px solid white;
+  fill: white;
+  background: none;
+}
+
+.icon__footer:hover {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+/*Copyright
 ============================= */
-                                    
-                                    .footer {
-                                        width: 100%;
-                                        background-color: #3a3e64;
-                                        padding: 70px 0;
-                                    }
-                                    
-                                    .footer__content {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                    }
-                                    
-                                    .footer__item {
-                                        width: 33.333%;
-                                        text-align: center;
-                                    }
-                                    
-                                    .footer__title {
-                                        color: #fff;
-                                        text-transform: uppercase;
-                                        font-family: 'raleway', sans-serif;
-                                        font-weight: bold;
-                                        margin-bottom: 20px;
-                                    }
-                                    
-                                    .footer__text {
-                                        color: rgba(225, 255, 255, .5);
-                                        font-style: normal;
-                                        font-size: 14px;
-                                        line-height: 1.5;
-                                    }
-                                    
-                                    .footer__social {
-                                        color: white;
-                                    }
-                                    
-                                    .icon__footer {
-                                        color: white;
-                                        border: 2px solid white;
-                                        fill: white;
-                                        background: none;
-                                    }
-                                    
-                                    .icon__footer:hover {
-                                        color: white;
-                                        border: 2px solid white;
-                                        border-radius: 50%;
-                                    }
-                                    /*Copyright
+
+/* Copyright */
+
+.copyright {
+  width: 100%;
+  background-color: #313454;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  height: 90px;
+  padding-top: 20px;
+  color: rgba(225, 255, 255, 0.5);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: default;
+}
+
+/* Author */
+
+.author__link {
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  line-height: 1.5;
+  font-family: "raleway", sans-serif;
+}
+.author__link:hover {
+  text-decoration: underline;
+}
+
+/*Burger
 ============================= */
-                                    /*Media
+
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  color: transparent;
+  font-size: 0px;
+  position: relative;
+  left: 0;
+  z-index: 2;
+  margin-right: 0px;
+  text-align: center;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.burger__item:before {
+  top: -8px;
+  margin-left: -15px;
+}
+
+.burger__item:after {
+  bottom: -8px;
+  margin-left: -15px;
+}
+
+/*Media quieries
 ============================= */
-                                    
-                                    @media (max-width: 1200px) {
-                                        .intro__title {
-                                            font-size: 40px;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 600px;
-                                    )
-                                    /* Intro */
-                                    
-                                    {
-                                        .intro__title {
-                                            font-size: 20px;
-                                        }
-                                    }
-                                    /* Copyright */
-                                    
-                                    .copyright {
-                                        width: 100%;
-                                        background-color: #313454;
-                                        display: block;
-                                        text-align: center;
-                                        justify-content: center;
-                                        height: 90px;
-                                        padding-top: 20px;
-                                        color: rgba(225, 255, 255, .5);
-                                        font-style: normal;
-                                        font-size: 14px;
-                                        line-height: 1.5;
-                                    }
-                                    
-                                    .author__link {
-                                        color: #fff;
-                                        font-weight: 500;
-                                        text-transform: capitalize;
-                                        text-decoration: none;
-                                        line-height: 1.5;
-                                        font-family: 'raleway', sans-serif;
-                                    }
-                                    /* Burger */
-                                    
-                                    .burger {
-                                        display: none;
-                                        background: none;
-                                        border: 0;
-                                        padding: 10px 10px;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .burger__item {
-                                        display: block;
-                                        width: 30px;
-                                        height: 3px;
-                                        background-color: #fff;
-                                        color: transparent;
-                                        font-size: 0px;
-                                        position: relative;
-                                        left: 0;
-                                        z-index: 2;
-                                        margin-right: 0px;
-                                        text-align: center;
-                                    }
-                                    
-                                    .burger__item:before,
-                                    .burger__item:after {
-                                        content: '';
-                                        width: 100%;
-                                        height: 100%;
-                                        position: absolute;
-                                        z-index: 1;
-                                        background-color: #fff;
-                                        margin-right: 8px;
-                                        text-align: center;
-                                    }
-                                    
-                                    .burger__item:before {
-                                        top: -8px;
-                                        margin-left: -15px;
-                                    }
-                                    
-                                    .burger__item:after {
-                                        bottom: -8px;
-                                        margin-left: -15px;
-                                    }
-                                    
-                                    @media (max-width: 1300px)
-                                    /* Works */
-                                    
-                                    {
-                                        .works__item {
-                                            width: 50%;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 1000px) {
-                                        /* Team */
-                                        .team {
-                                            display: block;
-                                            margin: 20px 0;
-                                        }
-                                        .team__item {
-                                            width: 50%;
-                                            margin: 0;
-                                            padding: 10px 10px;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 991px) {
-                                        /* Nav */
-                                        .menu {
-                                            display: none;
-                                            flex-direction: column;
-                                            width: 100%;
-                                            text-align: right;
-                                            background-color: rgba(49, 52, 78, 0.9);
-                                            position: absolute;
-                                            right: 0;
-                                            top: 100%;
-                                            padding: 10px 0;
-                                        }
-                                        .menu__item {
-                                            padding: 7px 15px;
-                                        }
-                                        .show {
-                                            display: flex;
-                                            position: relative;
-                                            z-index: 5;
-                                            height: 100%;
-                                            width: 100%;
-                                            top: 0;
-                                            right: 0;
-                                        }
-                                        /* Burger */
-                                        .burger {
-                                            display: block;
-                                        }
-                                        /* Intro title */
-                                        .intro__title {
-                                            font-size: 40px;
-                                        }
-                                        /* Features */
-                                        .features {
-                                            margin: 40px 0;
-                                        }
-                                        /* Reviews */
-                                        .reviews {
-                                            display: none;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 767px) {
-                                        /* Intro */
-                                        .intro {
-                                            height: auto;
-                                            padding: 130px 0 30px 0;
-                                        }
-                                        .intro__title {
-                                            font-size: 30px;
-                                        }
-                                        .intro__subtitle {
-                                            font-size: 16px;
-                                            margin-bottom: 30px;
-                                        }
-                                        /* Works */
-                                        .works__item {
-                                            width: 100%;
-                                            height: 300px;
-                                        }
-                                        /* Footer */
-                                        .footer {
-                                            padding: 20px 0;
-                                        }
-                                        .footer__item {
-                                            width: 100%;
-                                            margin-top: 20px;
-                                        }
-                                        .footer__title {
-                                            margin-bottom: 10px;
-                                        }
-                                        .footer__social {
-                                            margin-top: 10px;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 627px) {
-                                        /* Features */
-                                        .features {
-                                            width: 100%;
-                                        }
-                                        .features__item {
-                                            padding: 0 10px;
-                                            max-width: 100%;
-                                            display: block;
-                                        }
-                                        /* Team */
-                                        .team__item {
-                                            width: 100%;
-                                            text-align: center;
-                                            margin-top: 20px;
-                                        }
-                                        .team__img {
-                                            margin: 0 auto;
-                                        }
-                                        .team__name {
-                                            margin: 10px 0;
-                                        }
-                                        .team__text {
-                                            padding: 0 20px;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 413px)
-                                    /* Download */
-                                    
-                                    {
-                                        .download {
-                                            margin: 30px 0 90px 0;
-                                        }
-                                        .btn__download {
-                                            max-width: 240px;
-                                        }
-                                        .download__subtitle {
-                                            margin-bottom: 20px;
-                                        }
-                                    }
-                                    
-                                    @media (max-width: 320px) {
-                                        /* Copyright */
-                                        .copyright {
-                                            padding-bottom: 10px;
-                                            padding-top: 10px;
-                                            height: 110px;
-                                        }
-                                        .copyright__text {
-                                            margin: 10px 5px 2px;
-                                        }
-                                        .copyright__link {
-                                            margin: 0px 5px 5px;
-                                        }
-                                    }
+
+@media (max-width: 1200px) {
+  .intro__title {
+    font-size: 40px;
+  }
+  /*  Intro */
+  .intro__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1300px) /* Works */ {
+  .works__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Team */
+  .team {
+    display: block;
+    margin: 20px 0;
+  }
+  .team__item {
+    width: 50%;
+    margin: 0;
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Nav */
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    background-color: rgba(49, 52, 78, 0.9);
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding: 10px 0;
+  }
+  .menu__item {
+    padding: 7px 15px;
+  }
+  .show {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  /* Burger */
+  .burger {
+    display: block;
+  }
+  /* Intro title */
+  .intro__title {
+    font-size: 40px;
+  }
+  /* Features */
+  .features {
+    margin: 40px 0;
+  }
+  /* Reviews */
+  .reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reviews__photo {
+    width: 100%;
+    overflow: hidden;
+    margin: 15px 0;
+  }
+
+  .reviews__content {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Intro */
+  .intro {
+    height: auto;
+    padding: 130px 0 30px 0;
+  }
+  .intro__title {
+    font-size: 30px;
+  }
+  .intro__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  /* Works */
+  .works__item {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Reviews */
+  .reviews__content {
+    font-size: 25px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer__title {
+    margin-bottom: 10px;
+  }
+  .footer__social {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 627px) {
+  /* Features */
+  .features {
+    width: 100%;
+  }
+  .features__item {
+    padding: 0 10px;
+    max-width: 100%;
+    display: block;
+  }
+  /* Team */
+  .team__item {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .team__img {
+    margin: 0 auto;
+  }
+  .team__name {
+    margin: 10px 0;
+  }
+  .team__text {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 413px) {
+  /* Download */
+  .download {
+    margin: 30px 0 90px 0;
+  }
+  .btn__download {
+    max-width: 240px;
+  }
+  .download__subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Copyright */
+  .copyright {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 110px;
+  }
+  .copyright__text {
+    margin: 10px 5px 2px;
+  }
+  .copyright__link {
+    margin: 0px 5px 5px;
+  }
+}
