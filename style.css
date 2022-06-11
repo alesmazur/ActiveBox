@@ -552,6 +552,7 @@ p {
   border: 0;
   padding: 10px 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .burger:focus {
   outline: none;
@@ -591,6 +592,28 @@ p {
 .burger__item:after {
   bottom: -8px;
   margin-left: -15px;
+}
+
+/* Active burger */
+.burger.active .burger__item {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.burger.active {
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+.burger.active .burger__item::before {
+  transform-origin: left top;
+  transform: rotate(36deg);
+  transition: all 0.3s ease-in-out;
+}
+.burger.active .burger__item::after {
+  transform-origin: left bottom;
+  transform: rotate(-36deg);
+  transition: all 0.3s ease-in-out;
 }
 
 /*Media quieries

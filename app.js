@@ -7,6 +7,7 @@ $(function () {
   let scrollPos = $(window).scrollTop();
   let nav = $("#nav");
   let navToggle = $("#navToogle");
+  let $this = $(this);
 
   // Fixed Header
 
@@ -24,11 +25,20 @@ $(function () {
     }
   });
 
+  $(".burger").removeClass("active");
+  $this.addClass("active");
   /*NavToogle*/
 
   navToggle.on("click", function (event) {
     event.preventDefault();
     nav.toggleClass("show");
+    $(".burger").toggleClass("active");
+  });
+
+  // Burger collapse
+  $(".menu__item, .header__logo ").on("click", function (event) {
+    event.preventDefault();
+    $(".burger").removeClass("active");
   });
 
   /*Smooth scroll*/
