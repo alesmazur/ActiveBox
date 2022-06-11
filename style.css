@@ -646,7 +646,7 @@ p {
     height: fit-content;
     align-items: center;
     background-color: rgba(49, 52, 78, 0.9);
-    position: absolute;
+    position: static;
     z-index: 1000;
     top: 100%;
     left: 0;
