@@ -1,40 +1,51 @@
-$(function() {
-    /*FixedHeader*/
-    let header = $("#header");
-    let intro = $("#intro");
-    let introH;
-    let scrollPos = $(window).scrollTop();
-    let nav = $("#nav");
-    let navToggle = $("#navToogle");
-    $(window).on("scroll load resize", function() {
-        introH = intro.innerHeight();
-        scrollPos = $(this).scrollTop();
+$(function () {
+  /*Vars*/
 
-        if (scrollPos > introH) { header.addClass("fixed"); } else { header.removeClass("fixed"); }
-    });
+  let header = $("#header");
+  let intro = $("#intro");
+  let introH = $("#intro").innerHeight();
+  let scrollPos = $(window).scrollTop();
+  let nav = $("#nav");
+  let navToggle = $("#navToogle");
 
+  // Fixed Header
 
-    /*PageBookmarks*/
+  checkScroll(scrollPos);
 
+  $(window).on("scroll load resize", function () {
+    scrollPos = $(this).scrollTop();
 
-    $("[data-scroll]").on("click", function(event) {
-            event.preventDefault();
-            let blockID = $(this).data('scroll');
-            let blockOffset = $(blockID).offset().top;
-            nav.removeClass("show");
+    checkScroll(scrollPos);
+  });
 
-            console.log(blockOffset);
-            $("html, body").animate({
-                scrollTop: blockOffset - 55
-            }, 700);
+  function checkScroll(scrollPos) {
+    if (scrollPos >= introH) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
+  }
 
-        })
-        /*NavToogle*/
+  /*NavToogle*/
 
-    navToggle.on("click", function(event) {
-        event.preventDefault();
-        nav.toggleClass("show");
-    });
-    /*SlickSlider*/
-    let slider = $("#reviewsSlider");
+  navToggle.on("click", function (event) {
+    event.preventDefault();
+    nav.toggleClass("show");
+  });
+
+  /*Smooth scroll*/
+
+  $("[data-scroll]").on("click", function (event) {
+    event.preventDefault();
+    let blockID = $(this).data("scroll");
+    let blockOffset = $(blockID).offset().top;
+    nav.removeClass("show");
+
+    $("html, body").animate(
+      {
+        scrollTop: blockOffset - 55,
+      },
+      600
+    );
+  });
 });
