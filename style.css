@@ -655,7 +655,7 @@ p {
     z-index: 1000;
     top: 100%;
     left: 0;
-    font-size: 22px;
+
     justify-content: center;
   }
   .menu__item,
@@ -664,6 +664,7 @@ p {
     line-height: 1.6;
     letter-spacing: 1.6;
     margin: 0 auto;
+    font-size: 22px;
   }
   /* Burger */
   .burger {
@@ -776,6 +777,10 @@ p {
   }
   .download__subtitle {
     margin-bottom: 20px;
+  }
+  .menu__item,
+  .menu__item:first-child {
+    font-size: 13px;
   }
 }
 
