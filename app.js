@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   /*Vars*/
 
   let header = $("#header");
@@ -55,5 +55,16 @@ $(function () {
       },
       600
     );
+  });
+
+  // Slick slider
+  $(".slider").slick({
+    infinite: true,
+    fade: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 300,
+    dots: true,
+    arrows: false,
   });
 });
