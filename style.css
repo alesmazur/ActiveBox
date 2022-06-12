@@ -364,12 +364,14 @@ p {
   background-color: #53354a;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .reviews__item {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .reviews__photo {
@@ -823,6 +825,9 @@ p {
 }
 
 /* Slick slider */
+.slick-slide {
+  height: auto !important;
+}
 
 .slick-dots {
   display: flex;
@@ -833,7 +838,7 @@ p {
 }
 
 .slick-dots li {
-  margin: 10px 0.25rem;
+  margin: 20px 0.25rem;
 }
 
 .slick-dots button {
@@ -843,10 +848,9 @@ p {
   padding: 0;
 
   border: none;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #fff;
-
-  text-indent: -9999px;
+  font-size: 0;
 }
 
 .slick-dots li.slick-active button {
