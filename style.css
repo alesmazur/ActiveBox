@@ -620,6 +620,7 @@ p {
 
 /*Media quieries
 ============================= */
+/* PC */
 
 @media (max-width: 1200px) {
   .intro__title {
@@ -649,7 +650,7 @@ p {
     padding: 10px 10px;
   }
 }
-
+/* Tablet landscape */
 @media (max-width: 991px) {
   /* Nav */
 
@@ -724,7 +725,7 @@ p {
     padding-right: 15px;
   }
 }
-
+/* Tablet portrait */
 @media (max-width: 767px) {
   /* Intro */
   .intro {
@@ -764,7 +765,7 @@ p {
     margin-top: 10px;
   }
 }
-
+/* Mobile */
 @media (max-width: 627px) {
   /* Features */
   .features {
@@ -808,8 +809,21 @@ p {
     font-size: 13px;
   }
 }
-
+/* iPhone5 */
 @media (max-width: 320px) {
+  /* Reviews */
+  .reviews__item {
+    display: block;
+  }
+  .reviews__photo {
+    width: 100%;
+    display: block;
+    min-width: 320px;
+  }
+  .reviews__content {
+    display: block;
+  }
+
   /* Copyright */
   .copyright {
     padding-bottom: 10px;
@@ -824,6 +838,7 @@ p {
   }
 }
 
+/* ----------------------------------------------------------------------- */
 /* Slick slider */
 .slick-slide {
   height: auto !important;
